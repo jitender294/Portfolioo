@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- header section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <p class="logo"><span style="color: #ff004f">Jitender</span> sharma</p>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi , I am <span>Jitender</span> Sharma.</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- about section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/IMG20230731090353.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications
+            with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.
+            What I do
+            crazy full stack developer who wants to explore every tech stack
+            ⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications
+
+            ⚡ Skilled in web development with expertise in HTML5, CSS3, and responsive design.
+
+            ⚡ Exceptional communication skills, demonstrated through effective collaboration in cross-functional teams.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('expierence')">
+              Expierence
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Frontend Developer</span><br />Html, Css, JavaScript, BootStrap, ReactJs</li>
+              <li><span>Backend Developer</span><br /> Nodejs, ExpressJs, MongoDb, Sql</li>
+              <li><span>Mern stack & Full Stack</span><br />Html, Css, JavaScript, BootStrap, ReactJs, Nodejs,
+                ExpressJs, MongoDb, Sql</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="expierence">
+            <ul>
+              <li><span>Full Stack Web Developer</span><br />DevTown</li>
+              <li><span>Web Developer</span><br />BestDesk It Solutions (Intership 6 Months)</li>
+              <!-- <li><span>Web Development</span><br />Developing Websites</li> -->
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Haryana Public School</span><br />Doing by Science side
+                September 2018 - April 2020</li>
+              <li><span>Advanced Institute of Technology and Management
+                </span><br />Bachelor Computer of Application
+                September 2020 - April 2023</li>
+              <!-- <li><span>Web Development</span><br />Developing Websites</li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            "I'm skilled in Web Design, where I specialize in creating attractive and easy-to-use websites. I'm
+            proficient in HTML, CSS, and JavaScript, which are the tools needed to build websites.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            I'm experienced in Full Stack Development, proficient in both frontend and backend technologies.
+            On the frontend,user interfaces using HTML, CSS, JavaScript and ReactJs. Meanwhile, on the backend, I'm
+            skilled in server-side languages like Node.js, ExpressJs as well as database management with tools like
+            MySQL or MongoDB.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>MERN Stack</h2>
+          <p>
+            I specialize in MERN Stack Development, MongoDB, Express.js, React.js, and Node.js to build powerful and
+            modern web applications. With proficiency in frontend technologies like HTML, CSS, and JavaScript and
+            ReactJs.
+          </p>
+          <!-- <a href="#">Learn More</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="work1" />
+          <div class="layer">
+            <h3>Tasky</h3>
+            <p>It is a Task Management System</p>
+            <a href="https://taskmanagemennt.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="work1" />
+          <div class="layer">
+            <h3>Solar System</h3>
+            <p>It is a Solar Circular System Project</p>
+            <a href="https://solarsystembyjitender.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="work1" />
+          <div class="layer">
+            <h3>Zomato Landing Page</h3>
+            <p>It is a Landing Page of Zomato</p>
+            <a href="https://zomatolandingg.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="btn">See More</div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>js903172@gmail.com
+          </p>
+          <p><i class="fa-solid fa-phone"></i>9817384392</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Jitender294" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/jitender-sharma-vats/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/jitender294" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/jitender_sharma___/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div>
+            <a href="Jitender resume 1.pdf" download class="btn btn2">Download CV</a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your mail" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Jitender Sharma</p>
+    </div>
+  </div>
+
+  <script>
+    var tablelinks = document.getElementsByClassName("tab-links");
+    var tablecontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablelink of tablelinks) {
+        tablelink.classList.remove("active-links");
+      }
+
+      for (tablecontent of tablecontents) {
+        tablecontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-links");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sideMenu = document.getElementById("sidemenu")
+    function openMenu() {
+      sideMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+      sideMenu.style.right = "-200px";
+    }
+
+  </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzNdEXelX2HVRdbgrf4ZAKTNtlCAJ2oOUQImP5OWNlrly8A_tvrVU_C1dcBWJcwiu4G8Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent Successfully";
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
